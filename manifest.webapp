@@ -1,0 +1,11 @@
+{
+  "version": "1.1",	
+  "name": "persona",
+  "description": "Personal Diary",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Trishul",
+    "url": "http://about.me/trishul"
+  },
+  "default_locale": "en"
+}

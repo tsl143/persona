@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="main.js"></script>
+<link href="main.css" rel="stylesheet">
+</head>
+<body>
+<div data-role="page" id="homepage" class="active">
+	<div id="login" class="hideit">
+		<input type="password" placeholder="Password" id="pword"/>
+		<div id="letmein" onclick="javascript:letmein()" class="btn">Let me In</div>
+	</div>
+	<div id="signup" class="hideit">
+		<input type="text" id="name" placeholder="Name">
+		<input type="text" id="pass" placeholder="password">
+		<input type="text" id="cpass" placeholder="Confirm password">
+		<div id="register" onclick="javascript:register()" class="btn">Register</div>
+	</div>
+</div>
+<div data-role="page" id="diary">	
+<input type="date" id="seldate"/>
+<textarea id="content"></textarea>
+<input type="submit" id="fav" value="Add to favorite" onclick="addfavs()"/><input type="submit" id="submit" value="Done" /><input type="submit" value="logout" id="logout">
+</div>
+<div data-role="page" id="favs">
+	<ul id="favlist"></ul>
+</div>
+<footer>
+	<div class="foot fav" onclick="loadfavs()">Favs</div>
+	<div class="foot reset" onclick="resetpass()">Reset Password</div>
+</footer>	
+</body>
+</html>
