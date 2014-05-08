@@ -2,8 +2,10 @@
 <html>
 <head>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="main.js"></script>
-<link href="main.css" rel="stylesheet">
+<script src="js/main.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<link href="css/main.css" rel="stylesheet">
+<link href="css/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
 </head>
 <body>
 <div data-role="page" id="homepage" class="active">
@@ -19,13 +21,14 @@
 	</div>
 </div>
 <div data-role="page" id="diary">	
-<input type="date" id="seldate"/>
+<input type="text" id="seldate"/>
 <textarea id="content"></textarea>
 <input type="submit" id="fav" value="Add to favorite" onclick="addfavs()"/><input type="submit" id="submit" value="Done" /><input type="submit" value="logout" id="logout">
 </div>
 <div data-role="page" id="favs">
 	<ul id="favlist"></ul>
 </div>
+<div id="overlay"></div><div id="popup"><input type="password" id="rpw" required><input id="crpw" type="password" required><input id="change" type="button" value="Change it!"></div>
 <footer>
 	<div class="foot fav" onclick="loadfavs()">Favs</div>
 	<div class="foot reset" onclick="resetpass()">Reset Password</div>

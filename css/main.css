@@ -1,3 +1,4 @@
+body{font-size:12px;}
 [data-role="page"]{display:none;transition: all 2s;-moz-transition:all 2s;-webkit-transition:all 2s;}
 .active {display:block;}
 .hideit{display:none;}
@@ -8,4 +9,7 @@ input{display: block;margin: 20px auto;padding: 5px;}
 #diary{opacity:0;}
 .rotate{-webkit-transform: rotate(360deg);transform: rotate(360deg);-moz-transform: rotate(360deg);}
 footer{position:fixed;bottom: 0;left:0;width: 100%;}
-.foot{width: 49%;display: inline-block;}
+.foot{width: 49%;display: inline-block;display:none;}
+#overlay{background-color:rgba(0,0,0,.5);height:100%;width:100%;position :fixed;z-index: 8888;display:none;top:0;left:0}
+#popup{background-color:#F26464;top:50%;margin-top:-85px;left:50%;margin-left:-100px;height:170px;width:200px;position :fixed;z-index: 9999;display:none;}
+#seldate { font-size: 12px; } 
