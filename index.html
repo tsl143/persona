@@ -10,28 +10,37 @@
 <body>
 <div data-role="page" id="homepage" class="active">
 	<div id="login" class="hideit">
+            <div class="welcome"><img src="img/url.gif"></div>
 		<input type="password" placeholder="Password" id="pword"/>
-		<div id="letmein" onclick="javascript:letmein()" class="btn">Let me In</div>
+		<div id="letmein" onclick="javascript:letmein()" class="mainbtn btn">Let me In</div>
 	</div>
 	<div id="signup" class="hideit">
 		<input type="text" id="name" placeholder="Name">
 		<input type="text" id="pass" placeholder="password">
 		<input type="text" id="cpass" placeholder="Confirm password">
-		<div id="register" onclick="javascript:register()" class="btn">Register</div>
+		<div id="register" onclick="javascript:register()" class="btn mainbtn">Register</div>
 	</div>
 </div>
 <div data-role="page" id="diary">	
+    <div id="help"></div>
 <input type="text" id="seldate"/>
 <textarea id="content"></textarea>
-<input type="submit" id="fav" value="Add to favorite" onclick="addfavs()"/><input type="submit" id="submit" value="Done" /><input type="submit" value="logout" id="logout">
+<!--<input type="submit" id="fav" value="Add to favorite" onclick="addfavs()"/>--><div id="submit" class="innerbtn">Save</div><div class="innerbtn" id="logout">Logout</div>
 </div>
-<div data-role="page" id="favs">
+<!--<div data-role="page" id="favs">
 	<ul id="favlist"></ul>
+</div>-->
+<div id="overlay"></div><div id="popup" class="popup"><input type="password" placeholder="New Password" id="rpw" required><input placeholder="Confirm Password" id="crpw" type="password" required><input id="change" type="button" value="Change it!"></div>
+<div id="helppop" class="hideit popup">
+    <ol>
+        <li>Tap on date to change date</li>
+        <li>Tap on board to write </li>
+        <li>Tap on Key to reset Password</li>
+    </ol>
 </div>
-<div id="overlay"></div><div id="popup"><input type="password" id="rpw" required><input id="crpw" type="password" required><input id="change" type="button" value="Change it!"></div>
 <footer>
-	<div class="foot fav" onclick="loadfavs()">Favs</div>
-	<div class="foot reset" onclick="resetpass()">Reset Password</div>
+	<!--<div class="foot fav" onclick="loadfavs()">Favs</div>-->
+	<div class="foot reset" onclick="resetpass()"></div>
 </footer>	
 </body>
 </html>

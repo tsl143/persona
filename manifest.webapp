@@ -1,8 +1,12 @@
 {
   "version": "1.1",	
-  "name": "persona",
-  "description": "Personal Diary",
+  "name": "Personal Diary",
+  "description": "Personal Diary to store Day to day Secrets/ Information",
   "launch_path": "/index.html",
+    "icons": {
+        "128": "/img/icon_128.jpg",
+        "60": "/img/icon_60.jpg"
+      },
   "developer": {
     "name": "Trishul",
     "url": "http://about.me/trishul"

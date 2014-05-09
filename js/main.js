@@ -41,6 +41,7 @@ current_date=today;
 
 
 $(document).ready(function(){
+    $("#logout").click(function(){window.location.reload();});
 	chklogin();
 	 	$(function() {
 		$( "#seldate" ).datepicker({ autoSize: true });
@@ -55,7 +56,8 @@ $(document).ready(function(){
   	 $("#submit").click(function(){
   	 		inupdata();
   		 });
-	 $("#overlay").click(function(){$("#overlay, #popup").hide();});  		 
+	 $("#overlay").click(function(){$("#overlay, .popup").hide();});  		 
+         $("#help").click(function(){$("#overlay, #helppop").show();});
   	 $("#change").click(function(){
   	 		if($("#rpw").val()==$("#crpw").val() && $("#cpw").val()!=null)
   	 		{
@@ -112,6 +114,7 @@ function inupdata()
                         request.result.d_content = txtval;
                         objectStore.put(request.result);};
   	 			}
+                                alert("Secret added");
 }
 
 function chklogin()
